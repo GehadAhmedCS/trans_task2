@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="tablecontent p-5">
+      <div
+        class="er-container d-flex d-none align-items-center justify-content-center"
+      >
+        <div class="alert alert-danger text-center w-50" id="er-alert"></div>
+      </div>
+
+      <div class="container text-center">
+        <h1 class="text-center text-capitalize">
+          transaction application 
+        </h1>
+        <div
+          class="d-flex justify-content-center align-items-center gap-4 my-5"
+        >
+          <input
+            class="form-control"
+            type="text"
+            placeholder="search by name"
+            aria-label="default input example"
+            id="searchInputByName"
+          />
+          <input
+          class="form-control"
+
+            type="number"
+            id="searchInputByAmount"
+            placeholder="Search by amount"
+            aria-label="default input example"
+
+          />
+        </div>
+<div class="row text-center align-items-center justify-content-center">
+
+  <div class="col-md-6 col-sm-12  "  >
+    <canvas id="transactionChart" width="400" height="180"></canvas>
+
+  </div>
+
+</div>
+        
+
+        <table class="table table-dark table-striped" id="customer-table">
+          <thead class=" ">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Customer-Name</th>
+              <th scope="col">transaction-id</th>
+              <th scope="col">Date</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="table-body"></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js
+    "></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
